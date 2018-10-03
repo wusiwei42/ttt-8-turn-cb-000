@@ -20,7 +20,7 @@ def input_to_index(user_input)
   return converted_input
 end
 
-def valid_move(user_input)
+def valid_move?(user_input)
   if user_input > 9
     return false
   else user_input == nil
