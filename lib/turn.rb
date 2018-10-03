@@ -1,6 +1,6 @@
 def turn(board)
   puts "Please enter 1-9:"
-  
+
 end
 
 def display_board(board)
@@ -17,18 +17,10 @@ def input_to_index(user_input)
 end
 
 def valid_move?(board, index)
-  if position_taken?(board, index) == false && index > 0 && index < 9
+  if index >= 0 && index <= 8 && board[index] == " "
     return true
-  elsif position_taken?(board, index) == true
-    return false
-  end
-end
-
-def position_taken?(board, index)
-  if board[index] == " " || board[index] == ""
-    return false
   else
-    return true
+    return false
   end
 end
 
