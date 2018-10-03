@@ -21,12 +21,15 @@ def input_to_index(user_input)
 end
 
 def valid_move?(board, index)
-  if position_taken?(board, index) == false
-    return true
-  elsif position_taken?(board, index) == true
-    return false
-  elsif position_taken?(board, index) == nil
-    return false
+  if index > 0 || index < 9
+  else
+    if position_taken?(board, index) == false
+      return true
+    elsif position_taken?(board, index) == true
+      return false
+    elsif position_taken?(board, index) == nil
+      return false
+    end
   end
 end
 
