@@ -15,14 +15,17 @@ def display_board(board)
   puts " #{board[6]} | #{board[7]} | #{board[8]} "
 end
 
-def input_to_index(input)
-  input.to_i
-  return input
-end
-
 def input_to_index(user_input)
   converted_input = user_input.to_i - 1
   return converted_input
+end
+
+def valid_move(user_input)
+  if user_input > 9
+    return false
+  else user_input == nil
+    return false
+  end
 end
 
 def move(board, index, value = "X")
