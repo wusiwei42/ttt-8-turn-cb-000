@@ -1,11 +1,6 @@
-def turn
+def turn(board)
   puts "Please enter 1-9:"
-end
-
-def ask_user_input
-  puts "Welcome to Tic Tac Toe!"
-  puts "Where would you like to go?"
-  input = gets.input
+  
 end
 
 def display_board(board)
