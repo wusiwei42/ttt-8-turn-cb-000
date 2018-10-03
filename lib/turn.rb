@@ -4,10 +4,8 @@ def turn(board)
   converted_input = input_to_index(input)
   if valid_move?(board, converted_input) == false
     turn(board)
-  else
-    move(board, index, "X")
   end
-
+  move(board, index)
 end
 
 def display_board(board)
