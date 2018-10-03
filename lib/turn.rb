@@ -25,6 +25,8 @@ def valid_move?(board, user_input)
     return false
   else user_input == nil
     return false
+  else
+    return true
   end
 end
 
