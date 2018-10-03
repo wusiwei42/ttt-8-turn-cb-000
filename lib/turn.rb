@@ -23,7 +23,7 @@ end
 def valid_move?(board, user_input)
   if user_input > 9
     return false
-  else user_input == nil
+  elsif user_input == nil
     return false
   else
     return true
